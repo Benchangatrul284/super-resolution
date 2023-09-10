@@ -1,2 +1,7 @@
 # super-resolution
-# test
+## Model structure
+
+## train
+'''
+py train.py --resume checkpoint/model.pth
+'''
