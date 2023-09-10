@@ -10,8 +10,8 @@ import matplotlib.pyplot as plt
 from model import IMDN ,IMDN_RTC, IMDN_SA
 import math
 from demo import demo_UHD_fast,psnr_tensor, TestSet
-from best import IMDN_DW
-from own_model import IMDN_MH
+# import your model here
+from model import IMDN_MH
 # plot loss curve
 def plot_loss_curve():
     plt.cla()
