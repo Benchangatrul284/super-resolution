@@ -9,6 +9,10 @@ python train.py --resume checkpoint/model.pth
 ```python
 python demo.py 
 ```
+## result
+| LR | SR | HR |
+| ---- | ----------- | --- |
+|![Example image](Set5/LRbicx3/baby.png)|![Example image](result/baby.png) | ![Example image](Set5/original/baby.png)  |
 
 ## video demo
 [![demo](https://img.youtube.com/vi/V3eUNIprdOM/0.jpg)](https://www.youtube.com/watch?v=V3eUNIprdOM)
