@@ -7,6 +7,7 @@ import cv2
 from natsort import natsorted
 import random
 
+
 # data augmentation
 def augment(*args, hflip=True, rot=True):
     hflip = hflip and random.random() < 0.5
