@@ -29,17 +29,22 @@ python png2npy.py
         * X3
 ## train
 then run train.py
-```python
+```bash
 python train.py
 ```
 without pretrained model
-```python
+```bash
 python train.py --resume checkpoint/model.pth
 ```
 with pretrained model
 
 ## demo
-```python
+convert model to demo.py readable format
+```bash
+python load_model.py
+```
+then run demo.py
+```bash
 python demo.py 
 ```
 ## result
