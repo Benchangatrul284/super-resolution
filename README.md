@@ -12,7 +12,6 @@ python demo.py
 ## result
 | LR | SR | HR |
 | ---- | ----------- | --- |
-
 |![Example image](Set5/LRbic/butterfly.png)|![Example image](result/butterfly.png) | ![Example image](Set5/original/butterfly.png)  |
 
 ## video demo
