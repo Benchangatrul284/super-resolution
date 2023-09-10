@@ -105,8 +105,8 @@ def video_downscale(crop_path,downscale_path,scale=3):
     cap.release()
 
 def video_SR(org_path = 'downscale.mp4',SR_path = 'SR.mp4',scale = 3):
-    model = IMDN_DW(upscale=3).to(device)
-    model = load_model(model, 'model_32.pth')
+    model = IMDN_MH().to(device)
+    model = load_model(model, 'model.pth')
     model.eval()
 
     cap = cv2.VideoCapture(org_path)

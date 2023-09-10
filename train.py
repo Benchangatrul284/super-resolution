@@ -156,10 +156,9 @@ if __name__ == '__main__':
     epochs = args.nEpochs
     div2k_train = DIV2K(root='DIV2K_decoded', repeat=20, patch_size=255, mode='train')
     flickr2k = FLR2K(root='Flickr2K_decoded', repeat=1, patch_size=255)
-    butterfly = Butterfly(root='Butterfly_decoded', repeat=50, patch_size=96)
     train_ds= torch.utils.data.ConcatDataset([div2k_train, flickr2k])
 
-    train_dl = DataLoader(dataset = div2k_train, num_workers=6, batch_size=16, shuffle=True, pin_memory=True, drop_last=True)
+    train_dl = DataLoader(dataset = train_ds, num_workers=6, batch_size=16, shuffle=True, pin_memory=True, drop_last=True)
     valid_ds = DIV2K(root='DIV2K_decoded', repeat=10, patch_size=255, mode='val')
     valid_dl = DataLoader(dataset=valid_ds, num_workers=6, batch_size=10, shuffle=False, pin_memory=True, drop_last=True)
     test_ds = TestSet(lq_paths=['Set5/LRbicx3'], gt_paths=['Set5/original'])
